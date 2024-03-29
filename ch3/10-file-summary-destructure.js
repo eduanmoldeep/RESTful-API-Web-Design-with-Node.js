@@ -1,7 +1,7 @@
 import { readFile } from 'node:fs/promises'
 
 async function readFileContent(filePath) {
-  const text = await readFile(filePath, 'utf-8')
+  const text = await readFile(filePath)
   console.log(text)
 }
 
