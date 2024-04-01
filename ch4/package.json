@@ -1,0 +1,12 @@
+{
+  "name": "ch4",
+  "version": "1.0.0",
+  "description": "Code for Chapter 4 of RESTful APIs with Node.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Kane Hooper",
+  "license": "ISC"
+}
