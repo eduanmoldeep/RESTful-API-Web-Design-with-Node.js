@@ -3,22 +3,22 @@ import http from 'node:http'
 const server = http.createServer(requestHandler)
 
 function requestHandler(req, res) {
-  const { method, url } = req
+  const { method, url: path } = req
   let responseMessage
 
   // Router
-  if (url === '/authors' && method === 'GET') {
+  if (method === 'GET' && path === '/authors') {
     res.statusCode = 200
-    // Code to login user ...
+    // Code to get list of authors ...
     responseMessage = 'List of authors: JK Rowling, JRR Tolkien, Frank Herbert'
-  } else if (url === '/books' && method === 'GET') {
+  } else if (method === 'GET' && path === '/books') {
     res.statusCode = 200
-    // Code to get list o books ...
+    // Code to get list of books ...
     responseMessage = 'List of books: Harry Potter, Lord of the Rings, Dune'
-  } else if (url === '/purchase' && method === 'POST') {
+  } else if (method === 'POST' && path === '/purchase') {
     res.statusCode = 200
     // Code to purchase book ...
-    responseMessage = 'Book purchased successfully'
+    responseMessage = 'Book successfully purchased'
   } else {
     res.statusCode = 404
     responseMessage = 'Resource not found'
