@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "node --watch 22-rare-books-routes.js"
+    "dev": "node --watch 25-charge-routes.js"
   },
   "author": "",
   "license": "ISC",
